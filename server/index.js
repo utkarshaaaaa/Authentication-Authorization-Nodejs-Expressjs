@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use(cors())
 
-moongose.connect('mongodb://127.0.0.1:27017/chat')
+moongose.connect('mongodb://127.0.0.1:27017/chat') // mongoDB connection
 app.use('/api',Authorization,router)
 
 
